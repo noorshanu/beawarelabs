@@ -12,7 +12,9 @@
   scroll-behavior: smooth;
   color-scheme: light;
 }
-
+body{
+  line-height: normal;
+}
 
 .ImageCard{
   width: calc(20% - 24px);
@@ -71,6 +73,12 @@
     line-height: 1.5714285714285714;
     list-style: none;
     text-overflow: ellipsis;
+}
+.people-row {
+  flex-flow: row wrap;
+  row-gap: 30px;
+  font-size: 14px;
+  color: #fff;
 }
 @media (max-width:768px) {
   .ImageCard{
