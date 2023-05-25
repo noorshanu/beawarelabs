@@ -11,7 +11,35 @@ function Partners() {
           <h3 className="text-center text-black text-[40px] font-[600] mb-[60px]">
             Strategic Partners
           </h3>
-          <div className="flex flex-wrap justify-center sm:gap-7 gap-5"></div>
+          <div className="flex flex-wrap justify-center sm:gap-7 gap-5">
+            <a href="#" className="ImageCard relative flex flex-col justify-center items-center bg-white p-6 h-[100px] text-black "> 
+            <img src="assets/icons/avalan.svg" alt=""  />
+            </a>
+            <a href="#" className="ImageCard relative flex flex-col justify-center items-center bg-white p-6 h-[100px] text-black "> 
+            <img src="assets/icons/avalan.svg" alt=""  />
+            </a>
+            <a href="#" className="ImageCard relative flex flex-col justify-center items-center bg-white p-6 h-[100px] text-black "> 
+            <img src="assets/icons/avalan.svg" alt=""  />
+            </a>
+            <a href="#" className="ImageCard relative flex flex-col justify-center items-center bg-white p-6 h-[100px] text-black "> 
+            <img src="assets/icons/avalan.svg" alt=""  />
+            </a>
+            <a href="#" className="ImageCard relative flex flex-col justify-center items-center bg-white p-6 h-[100px] text-black "> 
+            <img src="assets/icons/avalan.svg" alt=""  />
+            </a>
+            <a href="#" className="ImageCard relative flex flex-col justify-center items-center bg-white p-6 h-[100px] text-black "> 
+            <img src="assets/icons/avalan.svg" alt=""  />
+            </a>
+            <a href="#" className="ImageCard relative flex flex-col justify-center items-center bg-white p-6 h-[100px] text-black "> 
+            <img src="assets/icons/avalan.svg" alt=""  />
+            </a>
+            <a href="#" className="ImageCard relative flex flex-col justify-center items-center bg-white p-6 h-[100px] text-black "> 
+            <img src="assets/icons/avalan.svg" alt=""  />
+            </a>
+            <a href="#" className="ImageCard relative flex flex-col justify-center items-center bg-white p-6 h-[100px] text-black "> 
+            <img src="assets/icons/avalan.svg" alt=""  />
+            </a>
+          </div>
         </div>
       </div>
     </section>

@@ -12,3 +12,21 @@
   scroll-behavior: smooth;
   color-scheme: light;
 }
+
+
+.ImageCard{
+  width: calc(20% - 24px);
+  border: 2px solid #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 16px 0px rgba(0,0,0,.05);
+}
+.ImageCard:hover{
+  border: 2px solid #fdd46e;
+}
+
+@media (max-width:768px) {
+  .ImageCard{
+    min-width: 200px;
+  }
+  
+}
