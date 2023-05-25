@@ -1,26 +1,27 @@
-
-
-import { BrowserRouter } from 'react-router-dom'
-import './App.css'
-import Navbar from './components/Navbar'
-import Hero from './sections/Hero'
-import Footer from './components/Footer'
+import { BrowserRouter } from "react-router-dom";
+import "./App.css";
+import Navbar from "./components/Navbar";
+import Hero from "./sections/Hero";
+import Footer from "./components/Footer";
+import Partners from "./sections/Partners";
 
 function App() {
-
-
   return (
-    <div className='bg-[#212121]'>
-      <div className='max-w-7xl mx-auto'>
-
+    <div className="bg-[#212121]">
+      <div className="max-w-7xl mx-auto">
         <BrowserRouter>
           <Navbar />
-
         </BrowserRouter>
-        <Hero/><Footer/>
+      </div>
+      <div className="max-w-7xl mx-auto">
+        <Hero />
+      </div>
+      <Partners />
+      <div className="max-w-7xl mx-auto">
+        <Footer />
       </div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
