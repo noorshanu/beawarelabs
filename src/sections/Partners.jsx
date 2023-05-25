@@ -1,7 +1,7 @@
 function Partners() {
   return (
     <section className="bg-[#f4f4f4] w-full relative">
-      <div className="flex flex-wrap px-[60px] py-[60px] mx-auto my-0 max-w-7xl">
+      <div className="flex flex-wrap px-[60px] py-[60px] mx-auto my-0 max-w-[1440px]">
         <div className="flex flex-col w-full">
           <img
             src="assets/partner-top.svg"
