@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./sections/Hero";
 import Footer from "./components/Footer";
 import Partners from "./sections/Partners";
-import Trust from "./sections/trust";
+import Trust from "./sections/TrustMe";
 import NewsLetter from "./sections/NewsLetter";
 import WhatPeople from "./sections/WhatPeople";
 
