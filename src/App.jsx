@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import Partners from "./sections/Partners";
 import Trust from "./sections/trust";
 import NewsLetter from "./sections/NewsLetter";
+import WhatPeople from "./sections/WhatPeople";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Partners />
       <Trust/>
       <NewsLetter/>
+      <WhatPeople/>
       <div className="max-w-[1440px] mx-auto">
         <Footer />
       </div>
