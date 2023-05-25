@@ -4,6 +4,8 @@ import Navbar from "./components/Navbar";
 import Hero from "./sections/Hero";
 import Footer from "./components/Footer";
 import Partners from "./sections/Partners";
+import Trust from "./sections/trust";
+import NewsLetter from "./sections/NewsLetter";
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         <Hero />
       </div>
       <Partners />
+      <Trust/>
+      <NewsLetter/>
       <div className="max-w-[1440px] mx-auto">
         <Footer />
       </div>
