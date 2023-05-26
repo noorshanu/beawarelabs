@@ -80,6 +80,9 @@ body{
   font-size: 14px;
   color: #fff;
 }
+.w-fit{
+  width: fit-content;
+}
 @media (max-width:768px) {
   .ImageCard{
     min-width: 200px;
