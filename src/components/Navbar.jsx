@@ -32,7 +32,7 @@ export default function Navbar() {
   return (
     // bg-[#14141f]
     <Popover className="relative bg-transparent z-10">
-      <div className="font-orbitron flex items-center justify-between  py-3 md:justify-start md:space-x-10 animate-top-left px-5">
+      <div className="fixed top-0 left-0 right-0 bg-[#212121]  font-orbitron flex items-center justify-between  py-4 md:justify-start md:space-x-10 animate-top-left px-5">
         <img src="/assets/logo.svg" className="h-8 w-auto" alt="" />
         <div className=" flex items-center justify-center md:flex md:flex-1 space-x-4 lg:w-0">
           <Popover.Group as="nav" className="hidden space-x-10 md:flex mx-5">
@@ -85,7 +85,7 @@ export default function Navbar() {
           focus
           className="absolute inset-x-0 top-0 bottom-0 origin-top-right transform transition md:hidden"
         >
-          <div className=" rounded-lg bg-[#343444] h-screen w-screen shadow-lg ring-1 ring-black ring-opacity-5">
+          <div className=" rounded-lg bg-[#212121] h-screen w-screen shadow-lg ring-1 ring-black ring-opacity-5">
             <div className="bg-black px-5 py-3 rounded-md">
               <div className="flex items-center justify-between">
                 <div className="focus:border:0 flex items-center justify-center space-x-1 focus:outline-0 focus:ring-0">

@@ -8,6 +8,7 @@ import Trust from "./sections/TrustMe";
 import NewsLetter from "./sections/NewsLetter";
 import WhatPeople from "./sections/WhatPeople";
 import Stats from "./sections/Stats";
+import Builder from "./sections/Builder";
 
 function App() {
   return (
@@ -17,10 +18,12 @@ function App() {
           <Navbar />
         </BrowserRouter>
       </div>
+      
       <div className="max-w-[1440px] mx-auto">
         <Hero />
         <Stats/>
       </div>
+      <Builder/>
       <Partners />
       <Trust/>
       <NewsLetter/>
