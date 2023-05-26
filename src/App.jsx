@@ -13,13 +13,13 @@ import Builder from "./sections/Builder";
 function App() {
   return (
     <div className="bg-[#212121]">
-      <div className="max-w-[1440px] mx-auto">
+      <div className="max-w-[87rem] mx-auto">
         <BrowserRouter>
           <Navbar />
         </BrowserRouter>
       </div>
       
-      <div className="max-w-[1440px] mx-auto">
+      <div className="max-w-[87rem] mx-auto mt-[68px]">
         <Hero />
         <Stats/>
       </div>
@@ -28,7 +28,7 @@ function App() {
       <Trust/>
       <NewsLetter/>
       <WhatPeople/>
-      <div className="max-w-[1440px] mx-auto">
+      <div className="max-w-[87rem] mx-auto">
         <Footer />
       </div>
     </div>

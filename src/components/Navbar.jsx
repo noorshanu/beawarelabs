@@ -1,34 +1,34 @@
-import { Fragment } from "react";
-import { Popover, Transition } from "@headlessui/react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Fragment } from 'react'
+import { Popover, Transition } from '@headlessui/react'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 let navItems = [
   {
-    label: "Products",
-    route: "/",
+    label: 'Products',
+    route: '/',
   },
   {
-    label: "About",
-    route: "Market",
+    label: 'About',
+    route: 'Market',
   },
   {
-    label: "INFRA Token",
-    route: "Market",
+    label: 'INFRA Token',
+    route: 'Market',
   },
   {
-    label: "Community",
-    route: "Market",
+    label: 'Community',
+    route: 'Market',
   },
   {
-    label: "Blog",
-    route: "Market",
+    label: 'Blog',
+    route: 'Market',
   },
   // { label: "Features", route: "Create", icon: "/assets/icons/interface.png" },
   // { label: "Roadmap", route: "Wallet", icon: "/assets/icons/cube.png" },
-];
+]
 
 export default function Navbar() {
-  const route = "/";
+  const route = '/'
   return (
     // bg-[#14141f]
     <Popover className="relative bg-transparent z-10">
@@ -43,18 +43,20 @@ export default function Navbar() {
                   href={nav.route}
                   className={`text-medium font-normal hover:text-[#fdd46e]
                      
-                     ${route == nav.route ? " text-[#fdd46e] " : "text-[#9292C5]"}
+                     ${
+                       route == nav.route
+                         ? ' text-[#fdd46e] '
+                         : 'text-[#9292C5]'
+                     }
                   `}
                 >
                   <div className=" flex justify-center items-center">
                     <span>{nav.label}</span>
                   </div>
-
                 </a>
-              );
+              )
             })}
           </Popover.Group>
-          
 
           <div className=" md:hidden">
             <Popover.Button className=" inline-flex items-center justify-center  rounded-md  p-2">
@@ -64,12 +66,11 @@ export default function Navbar() {
           </div>
         </div>
         <a
-            href="/"
-            className="mr-8 whitespace-nowrap rounded-md py-2 font-bold justify-center items-center px-3 text-sm md:flex hidden text-white bg-white bg-opacity-5"
-          >
-            Contact
-
-          </a>
+          href="/"
+          className="mr-8 whitespace-nowrap w-40 border bg-transparent  border-[#fdb913] text-[#fdb913] rounded-md py-2 font-bold justify-center items-center px-3 text-sm md:flex hidden"
+        >
+          Contact
+        </a>
       </div>
 
       <Transition
@@ -83,17 +84,16 @@ export default function Navbar() {
       >
         <Popover.Panel
           focus
-          className="absolute inset-x-0 top-0 bottom-0 origin-top-right transform transition md:hidden"
+          className="fixed inset-0 transform transition md:hidden"
         >
-          <div className=" rounded-lg bg-[#212121] h-screen w-screen shadow-lg ring-1 ring-black ring-opacity-5">
-            <div className="bg-black px-5 py-3 rounded-md">
+          <div className="relative rounded-lg bg-[#212121] h-screen w-screen ">
+            <div className="bg-[#212121] border-b border-white border-opacity-50 px-5 py-3">
               <div className="flex items-center justify-between">
                 <div className="focus:border:0 flex items-center justify-center space-x-1 focus:outline-0 focus:ring-0">
                   <img src="/assets/logo.svg" alt="" />
                 </div>
-                <div className="-mr-2">
+                <div className="mr-3">
                   <Popover.Button className=" inline-flex items-center justify-center rounded-md  p-2">
-                    <span className="sr-only">Close menu</span>
                     <XMarkIcon
                       className="h-6 w-6"
                       aria-hidden="true"
@@ -110,23 +110,31 @@ export default function Navbar() {
                     <a
                       key={i}
                       href={nav.route}
-                      className={`rounded-md py-2 px-2 text-base font-medium  text-white hover:bg-gray-900
-                        ${(!route && i === 0) || route === nav.label
-                          ? " bg-gray-900 text-[#fdd46e] "
-                          : "text-white"
+                      className={`rounded-md py-2 px-2 text-base font-medium  text-white hover:text-[#fdd46e]
+                        ${
+                          (!route && i === 0) || route === nav.label
+                            ? '  text-[#fdd46e] '
+                            : 'text-white'
                         }
                         `}
                     >
-                      {/* false ? " text-pink-400 bg-gray-900 " : "" */}
                       {nav.label}
                     </a>
-                  );
+                  )
                 })}
               </div>
             </div>
+            {/* code here */}
+            <a
+              href="/"
+              className="mr-8 whitespace-nowrap w-[90%] bottom-5 right-5 left-5 text-center absolute border bg-transparent  border-[#fdb913] text-[#fdb913] rounded-md py-2 font-bold justify-center items-center px-3 text-sm"
+            >
+              Contact
+            </a>
+            {/* code here */}
           </div>
         </Popover.Panel>
       </Transition>
     </Popover>
-  );
+  )
 }

@@ -23,42 +23,51 @@ let navLinks = {
 let socialLinks = [
   {
     link: 'https://www.discord.com/',
-    label: 'discord',
+    label: 'Twitter',
   },
   {
     link: 'https://www.telegram.com/',
-    label: 'telegram',
+    label: 'Telegram',
   },
   {
     link: 'https://www.docs.com/',
-    label: 'docs',
+    label: 'Discord',
   },
   {
     link: 'https://www.twitter.com/',
-    label: 'twitter',
+    label: 'Medium',
+  },
+  {
+    link: 'https://www.twitter.com/',
+    label: 'LinkedIn',
+  },
+  {
+    link: 'https://www.twitter.com/',
+    label: 'Facebook',
+  },
+  {
+    link: 'https://www.twitter.com/',
+    label: 'GitHub',
   },
 ]
 
-const FooterCard = () => {
+const FooterCard = ({label}) => {
   return (
-    <div className="w-40 text-white text-lg font-bold h-24 rounded-lg p-3 flex flex-col items-center bg-[#313131]">
-      <img src="/assets/icons/twitter.svg" className="text-white mb-1" />
-      Twitter
+    <div className="w-40 footerBox text-base h-24 rounded-xl p-3 flex cursor-pointer hover:text-[#fdb913] flex-col group items-center bg-[#313131]">
+      <img src="/assets/icons/twitter.svg" className=" mb-1 " />
+      {label}
     </div>
   )
 }
 const Footer = () => {
   return (
     <div className=" ">
-      <div className="mx-auto max-w-7xl px-3  mt-20 py-8 ">
+      <div className="mx-auto max-w-[87rem] px-3  mt-20 py-8 ">
       <div className="flex gap-4 sm:gap-7  md:gap-10 flex-wrap justify-center">
-        <FooterCard/>
-        <FooterCard/>
-        <FooterCard/>
-        <FooterCard/>
-        <FooterCard/>
-        <FooterCard/>
-        <FooterCard/>
+        {socialLinks.map((e)=>{
+          return  <FooterCard label={e.label}/>
+        })}
+      
       </div>
 
         <div className="h-[1px] w-full bg-white my-14 bg-opacity-40" />

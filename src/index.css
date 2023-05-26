@@ -116,8 +116,13 @@ a:hover {
     max-width: 100%;
   }
 }
-
+.hero-bg{
+  background: radial-gradient(50% 50% at 50% 50%,#494949 0,#313131 51.56%,#212121 100%);
+}
 .timeBox {
   background: linear-gradient(#313131 0, #000 100%),
     linear-gradient(0deg, #626262, #626262);
+}
+.footerBox{
+  color: #dfe0df;
 }
