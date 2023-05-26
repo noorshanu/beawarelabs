@@ -15,7 +15,9 @@
 body{
   line-height: normal;
 }
-
+a:hover {
+  color: #fdd46e !important;
+}
 .ImageCard{
   width: calc(20% - 24px);
   border: 2px solid #fff;
