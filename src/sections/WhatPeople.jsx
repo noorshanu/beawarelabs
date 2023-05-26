@@ -10,7 +10,17 @@ function WhatPeople() {
           </h3>
         </div>
     <div>
-        <div className="people-row flex min-w-0 -ml-[15px] -mr-[15px] ">
+        <div className="people-row grid grid-cols-1 sm:grid-cols-3 gap-8 min-w-0 -ml-[15px] -mr-[15px] ">
+          <div className="d px-4">
+            <div className="flex flex-col h-full rounded-md p-7 bg-white">
+              <a href="">
+                <img src="assets/pure.webp" alt=""  />
+              </a>
+
+            </div>
+
+          </div>
+          
 
         </div>
     </div>
