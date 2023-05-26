@@ -7,6 +7,7 @@ import Partners from "./sections/Partners";
 import Trust from "./sections/TrustMe";
 import NewsLetter from "./sections/NewsLetter";
 import WhatPeople from "./sections/WhatPeople";
+import Builder from "./sections/Builder";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <div className="max-w-[1440px] mx-auto">
         <Hero />
       </div>
+      <Builder/>
       <Partners />
       <Trust/>
       <NewsLetter/>

@@ -83,7 +83,19 @@ body{
 .w-fit{
   width: fit-content;
 }
+.builderCard{
+ 
+  border-bottom: 1px solid #313131;
+  padding: 60px 0;
+}
+.indexLink{
+  width: calc(25% - 15px);
+}
 @media (max-width:768px) {
+  .builderCard{
+    flex-direction: column;
+    align-items: center;
+  }
   .ImageCard{
     min-width: 200px;
   }
