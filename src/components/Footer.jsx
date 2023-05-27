@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { BsArrowRight, BsArrowRightShort, BsDiscord, BsFacebook, BsGithub, BsLinkedin, BsMedium, BsTelegram, BsTwitter } from 'react-icons/bs'
 let navLinks = {
   Products: [
     'Blast API',
@@ -22,39 +22,39 @@ let navLinks = {
 
 let socialLinks = [
   {
-    link: 'https://www.discord.com/',
     label: 'Twitter',
+    Icon:BsTwitter
   },
   {
-    link: 'https://www.telegram.com/',
     label: 'Telegram',
+    Icon: BsTelegram
   },
   {
-    link: 'https://www.docs.com/',
     label: 'Discord',
+    Icon:BsDiscord
   },
   {
-    link: 'https://www.twitter.com/',
     label: 'Medium',
+    Icon:BsMedium
   },
   {
-    link: 'https://www.twitter.com/',
     label: 'LinkedIn',
+    Icon:BsLinkedin
   },
   {
-    link: 'https://www.twitter.com/',
     label: 'Facebook',
+    Icon:BsFacebook
   },
   {
-    link: 'https://www.twitter.com/',
     label: 'GitHub',
+    Icon:BsGithub
   },
 ]
 
-const FooterCard = ({label}) => {
+const FooterCard = ({ label, Icon }) => {
   return (
-    <div className="w-40 footerBox text-base h-24 rounded-xl p-3 flex cursor-pointer hover:text-[#fdb913] flex-col group items-center bg-[#313131]">
-      <img src="/assets/icons/twitter.svg" className=" mb-1 " />
+    <div className="w-40 group footerBox text-base h-24 rounded-xl p-3 py-5 flex justify-between cursor-pointer hover:text-[#fdb913] flex-col group items-center bg-[#313131]">
+      <Icon size={25} className="group-hover:text-[#fdb913]" />
       {label}
     </div>
   )
@@ -63,12 +63,11 @@ const Footer = () => {
   return (
     <div className=" ">
       <div className="mx-auto max-w-[87rem] px-3  mt-20 py-8 ">
-      <div className="flex gap-4 sm:gap-7  md:gap-10 flex-wrap justify-center">
-        {socialLinks.map((e)=>{
-          return  <FooterCard label={e.label}/>
-        })}
-      
-      </div>
+        <div className="flex gap-4 sm:gap-7  md:gap-10 flex-wrap justify-center">
+          {socialLinks.map((e) => {
+            return <FooterCard label={e.label} Icon={e.Icon}/>
+          })}
+        </div>
 
         <div className="h-[1px] w-full bg-white my-14 bg-opacity-40" />
         <div className="lg:gap-x-4 grid grid-cols-2 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-6  gap-y-9">
@@ -92,8 +91,8 @@ const Footer = () => {
                   placeholder="Enter your email"
                   className="bg-transparent border-none outline-none w-[70%] text-black text-sm"
                 />
-                <button className="bg-[#313131] rounded-md text-white font-barlow font-medium text-sm py-2 px-3 cursor-pointer ">
-                  -{'>'}
+                <button className="bg-[#313131] rounded-md text-white font-barlow font-medium text-sm py-1.5 px-1.5 cursor-pointer ">
+                 <BsArrowRight size={20} className='cursor-pointer text-white'  />
                 </button>
               </div>
             </div>

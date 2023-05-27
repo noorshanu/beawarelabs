@@ -31,17 +31,18 @@ export default function Navbar() {
   const route = '/'
   return (
     // bg-[#14141f]
-    <Popover className="relative bg-transparent z-10">
-      <div className="fixed top-0 left-0 right-0 bg-[#212121]  font-orbitron flex items-center justify-between  py-4 md:justify-start md:space-x-10 animate-top-left px-5">
-        <img src="/assets/logo.svg" className="h-8 w-auto" alt="" />
-        <div className=" flex items-center justify-center md:flex md:flex-1 space-x-4 lg:w-0">
-          <Popover.Group as="nav" className="hidden space-x-10 md:flex mx-5">
-            {navItems.map((nav, i) => {
-              return (
-                <a
-                  key={i}
-                  href={nav.route}
-                  className={`text-medium font-normal hover:text-[#fdd46e]
+    <Popover className="relative bg-transparent z-10 bg-[#212121]">
+      <div className="fixed top-0 left-0 right-0 bg-[#212121] w-screen">
+        <div className=" max-w-[87rem] mx-auto font-orbitron flex items-center justify-between  py-4 md:justify-start md:space-x-10 animate-top-left px-5">
+          <img src="/assets/logo.svg" className="h-8 w-auto" alt="" />
+          <div className=" flex items-center justify-center md:flex md:flex-1 space-x-4 lg:w-0">
+            <Popover.Group as="nav" className="hidden space-x-10 md:flex mx-5">
+              {navItems.map((nav, i) => {
+                return (
+                  <a
+                    key={i}
+                    href={nav.route}
+                    className={`text-medium font-normal hover:text-[#fdd46e]
                      
                      ${
                        route == nav.route
@@ -49,28 +50,33 @@ export default function Navbar() {
                          : 'text-[#9292C5]'
                      }
                   `}
-                >
-                  <div className=" flex justify-center items-center">
-                    <span>{nav.label}</span>
-                  </div>
-                </a>
-              )
-            })}
-          </Popover.Group>
+                  >
+                    <div className=" flex justify-center items-center">
+                      <span>{nav.label}</span>
+                    </div>
+                  </a>
+                )
+              })}
+            </Popover.Group>
 
-          <div className=" md:hidden">
-            <Popover.Button className=" inline-flex items-center justify-center  rounded-md  p-2">
-              <span className="sr-only">Open menu</span>
-              <Bars3Icon className="h-6 w-6" color="white" aria-hidden="true" />
-            </Popover.Button>
+            <div className=" md:hidden">
+              <Popover.Button className=" inline-flex items-center justify-center  rounded-md  p-2">
+                <span className="sr-only">Open menu</span>
+                <Bars3Icon
+                  className="h-6 w-6"
+                  color="white"
+                  aria-hidden="true"
+                />
+              </Popover.Button>
+            </div>
           </div>
+          <a
+            href="/"
+            className="mr-8 whitespace-nowrap w-40 border bg-transparent  border-[#fdb913] text-[#fdb913] rounded-md py-2 font-bold justify-center items-center px-3 text-sm md:flex hidden"
+          >
+            Contact
+          </a>
         </div>
-        <a
-          href="/"
-          className="mr-8 whitespace-nowrap w-40 border bg-transparent  border-[#fdb913] text-[#fdb913] rounded-md py-2 font-bold justify-center items-center px-3 text-sm md:flex hidden"
-        >
-          Contact
-        </a>
       </div>
 
       <Transition
@@ -87,7 +93,7 @@ export default function Navbar() {
           className="fixed inset-0 transform transition md:hidden"
         >
           <div className="relative rounded-lg bg-[#212121] h-screen w-screen ">
-            <div className="bg-[#212121] border-b border-white border-opacity-50 px-5 py-3">
+            <div className="bg-[#212121] border-b  border-white border-opacity-50 px-5 py-3">
               <div className="flex items-center justify-between">
                 <div className="focus:border:0 flex items-center justify-center space-x-1 focus:outline-0 focus:ring-0">
                   <img src="/assets/logo.svg" alt="" />
