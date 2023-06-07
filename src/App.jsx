@@ -21,7 +21,7 @@ function App() {
   )
 
   return (
-    <div className="bg-[#3e3e3e]">
+    <div className="bg-[#212121]">
       <div className="max-w-[100rem] mx-auto">
         <Navbar />
       </div>

@@ -7,7 +7,7 @@ const TableEntry = ({ data }) => {
         <div className="relative h-10 w-10">
           <img
             className="h-full w-full rounded-full object-cover object-center"
-            src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+            src="https://content.prod.platform.metawin.com/avatars/template/default.png"
             alt=""
           />
         </div>
@@ -33,10 +33,10 @@ const Table = () => {
     {
       label: 'ACTIVITY',
       tableData: [
-        { name: 'AirBorns', entries: '50 entries', time: '8 hours ago' },
-        { name: 'AirBorns', entries: '50 entries', time: '8 hours ago' },
-        { name: 'AirBorns', entries: '50 entries', time: '8 hours ago' },
-        { name: 'AirBorns', entries: '50 entries', time: '8 hours ago' },
+        { name: 'AirBorns', entries: '50 entries', time: '1221 Entries' },
+        { name: 'AirBorns', entries: '50 entries', time: '21 Entries' },
+        { name: 'AirBorns', entries: '50 entries', time: '43 Entries' },
+        { name: 'AirBorns', entries: '50 entries', time: '1321 Entries' },
       ],
     },
     {
