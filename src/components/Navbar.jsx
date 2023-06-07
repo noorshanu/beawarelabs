@@ -16,6 +16,10 @@ let navItems = [
     route: 'Market',
   },
   {
+    label: 'Airdrop',
+    route: 'airdrop',
+  },
+  {
     label: 'Community',
     route: 'Market',
   },

@@ -1,38 +1,36 @@
-import { BrowserRouter } from "react-router-dom";
-import "./App.css";
-import Navbar from "./components/Navbar";
-import Hero from "./sections/Hero";
-import Footer from "./components/Footer";
-import Partners from "./sections/Partners";
-import Trust from "./sections/TrustMe";
-import NewsLetter from "./sections/NewsLetter";
-import WhatPeople from "./sections/WhatPeople";
-import Stats from "./sections/Stats";
-import Builder from "./sections/Builder";
+import {
+  Route,
+  RouterProvider,
+  createBrowserRouter,
+  createRoutesFromElements,
+} from 'react-router-dom'
+import './App.css'
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
+import Index from './pages/Index'
+import Airdrop from './pages/Airdrop'
 
 function App() {
+  const router = createBrowserRouter(
+    createRoutesFromElements(
+      <>
+        <Route path="/" element={<Index />} />
+        <Route path="/airdrop" element={<Airdrop />} />
+      </>,
+    ),
+  )
+
   return (
-    <div className="bg-[#212121]">
+    <div className="bg-[#3e3e3ed5]">
       <div className="max-w-[87rem] mx-auto">
-        <BrowserRouter>
-          <Navbar />
-        </BrowserRouter>
+        <Navbar />
       </div>
+
+      <RouterProvider router={router} />
+
       
-      <div className="max-w-[87rem] mx-auto mt-[68px]">
-        <Hero />
-        <Stats/>
-      </div>
-      <Builder/>
-      <Partners />
-      <Trust/>
-      <NewsLetter/>
-      <WhatPeople/>
-      <div className="max-w-[87rem] mx-auto">
-        <Footer />
-      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
