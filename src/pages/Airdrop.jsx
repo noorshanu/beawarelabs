@@ -4,9 +4,9 @@ import Footer from '../components/Footer'
 
 const Airdrop = () => {
   return (
-    <div className="flex  w-full mt-[70px] bg-[#3e3e3ed5] max-w-[85rem] mx-auto">
-      <div>
-        <div className="md:w-[80%] 2xl:w-full grid  md:grid-cols-11  mr-0 gap-x-4 px-5 sm:px-12 py-5">
+    <div className="flex  w-full mt-[70px] bg-[#3e3e3e] max-w-[87rem]  mx-auto 3xl:mr-[25vw] justify-center">
+      <div className='justify-self-center'>
+        <div className="md:w-[80%] 3xl:w-full grid  md:grid-cols-11  mr-0 gap-x-4 px-5 py-5">
           <div className="md:col-span-5">
             <video loop autoPlay className="rounded-md">
               <source src="/airdrop.mp4" type="video/mp4" />
@@ -66,15 +66,11 @@ const Airdrop = () => {
             </div>
           </div>
         </div>
-        <div className="md:w-[80%] 2xl:w-full  2xl:mr-0">
-
+        <div className="md:w-[80%] 3xl:w-full  3xl:mr-0">
           <Footer />
         </div>
       </div>
-      <div className='relative'>
-      <div className="w-[20vw]  fixed invisible md:visible top-[70px] right-0 bottom-0 left-[80vw] bg-black  h-full "></div>
-
-      </div>
+        <div className="w-[20vw]  fixed invisible md:visible top-[70px] right-0 bottom-0 left-[80vw] bg-black  h-full "></div>
     </div>
   )
 }
