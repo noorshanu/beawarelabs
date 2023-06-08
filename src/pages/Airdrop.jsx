@@ -3,15 +3,19 @@ import Table from '../components/Table'
 import Footer from '../components/Footer'
 import { BsTwitter } from 'react-icons/bs'
 import NFTCard from '../components/NFTCard'
-import {CgSandClock} from "react-icons/cg"
+import { CgSandClock } from 'react-icons/cg'
 import AirdropPageModal from '../components/AirdropPageModal'
+import AirdropSidebar from '../components/AirdropSidebar'
 
 const Airdrop = () => {
   return (
     <div className="flex  w-full mt-[70px]   max-w-[87rem]   3xl:mr-[25vw] mx-auto sm:justify-center">
-      <AirdropPageModal/>
+      <AirdropPageModal />
       <div className="justify-self-center">
-        <div className="md:w-[80%] max-w-[100%] 3xl:w-full grid  md:grid-cols-11  mr-0 gap-x-4 px-5 py-5 bg-[#141624] rounded-lg">
+        <div className="md:w-[80%] max-w-[100%] 3xl:w-full grid  md:grid-cols-11  mr-0 gap-4 px-5 py-5 bg-[#000] rounded-lg">
+          <div className="flex justify-center font-play text-white bg-[#0e1f2a] md:col-span-11 rounded-lg py-2 px-2 ">
+            ENTRY PILiHoo entered Sugar Rush with 0.0016 ETH
+          </div>
           <div className="md:col-span-5">
             <video loop autoPlay className="rounded-md">
               <source src="/airdrop.mp4" type="video/mp4" />
@@ -33,10 +37,17 @@ const Airdrop = () => {
           </div>
           <div className="md:col-span-6">
             <div className="flex justify-between">
-              <h1 className='text-white font-bold text-2xl'>ETH</h1>
-              <h1 className='text-white font-bold text-2xl flex items-center'><span className='text-sm text-gray-300 mr-1'> Value:</span> $56,323</h1>
+              <h1 className="text-white font-bold text-2xl">ETH</h1>
+              <h1 className="text-white font-bold text-2xl flex items-center">
+                <span className="text-sm text-gray-300 mr-1"> Value:</span>{' '}
+                $56,323
+              </h1>
             </div>
-            <p className="mt-3 text-white font-bold text-sm flex items-center"><CgSandClock className='text-blue-500 mr-1'/> CLOSES: 1 JUL 2023 01:00</p>
+            <div className="w-full h-[0.3px] bg-gray-400 mt-2" />
+            <p className="mt-3 text-white font-bold text-sm flex items-center">
+              <CgSandClock className="text-blue-500 mr-1" /> CLOSES: 1 JUL 2023
+              01:00
+            </p>
             <div className="bg-[#00111de9] p-3 rounded-2xl mt-4">
               <h1 className="text-center my-4 text-white text-2xl font-mono font-bold">
                 ENTER COMPETITION
@@ -103,7 +114,10 @@ const Airdrop = () => {
             </div>
             <div className="bg-[#00111de9] py-3 px-2 rounded-xl flex justify-center mt-1 font-medium text-white text-sm text-clip">
               <span className="text-blue-600 font-bold mr-1">Contract: </span>{' '}
-            <span className='text-clip'>   0X05ACEEDA4CFD9D084A20CB9E3B510C051599EF53</span>
+              <span className="text-clip">
+                {' '}
+                0X05ACEEDA4CFD9D084A20CB9E3B510C051599EF53
+              </span>
             </div>
             <div className="bg-[#00111de9] py-5 px-2 rounded-xl flex justify-center items-center flex-col mt-1  text-white text-[.8rem] font-bold">
               <p>SHARE THIS COMPETITION</p>
@@ -128,7 +142,7 @@ const Airdrop = () => {
           </div>
         </div>
       </div>
-      <div className="w-[20vw]  fixed invisible md:visible top-[70px] right-0 bottom-0 left-[80vw] bg-black  h-full "></div>
+      <AirdropSidebar/>
     </div>
   )
 }

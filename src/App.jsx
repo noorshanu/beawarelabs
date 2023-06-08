@@ -21,7 +21,6 @@ function App() {
           <Route path="/airdrop" element={<Airdrop />} />
           <Route path="/*" element={<NotFound />} />
         </Routes>
-        <Footer />
       </Router>
     </div>
   );
