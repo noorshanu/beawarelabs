@@ -1,6 +1,7 @@
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { NavLink } from 'react-router-dom'
 
 let navItems = [
   {
@@ -43,22 +44,19 @@ export default function Navbar() {
             <Popover.Group as="nav" className="hidden space-x-10 md:flex mx-5">
               {navItems.map((nav, i) => {
                 return (
-                  <a
-                    key={i}
-                    href={nav.route}
-                    className={`text-medium font-normal hover:text-[#fdd46e]
-                     
-                     ${
-                       route == nav.route
-                         ? ' text-[#fdd46e] '
-                         : 'text-[#9292C5]'
-                     }
-                  `}
-                  >
-                    <div className=" flex justify-center items-center">
-                      <span>{nav.label}</span>
-                    </div>
-                  </a>
+                  <li key={i}>
+            <NavLink
+              to={nav.route}
+              activeClassName="text-[#fdd46e]"
+              className={`text-medium font-normal p-0 m-0 h-fit w-fit hover:text-[#fdd46e] ${
+                route === nav.route ? 'text-[#fdd46e]' : 'text-[#9292C5]'
+              }`}
+            >
+              <div className="flex justify-center items-center">
+                <span>{nav.label}</span>
+              </div>
+            </NavLink>
+          </li>
                 )
               })}
             </Popover.Group>
