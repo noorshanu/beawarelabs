@@ -91,7 +91,7 @@ export default function Navbar() {
       >
         <Popover.Panel
           focus
-          className="fixed inset-0 transform transition md:hidden"
+          className="fixed inset-0 transform z-50 transition md:hidden"
         >
           <div className="relative rounded-lg bg-[#212121] h-screen w-screen ">
             <div className="bg-[#212121] border-b  border-white border-opacity-50 px-5 py-3">
