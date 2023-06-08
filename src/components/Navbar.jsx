@@ -36,8 +36,8 @@ export default function Navbar() {
   return (
     // bg-[#14141f]
     <Popover className="">
-      <div className="fixed top-0 left-0 right-0 bg-[#212121] w-full">
-        <div className=" max-w-[110rem] mx-auto font-orbitron flex items-center justify-between  py-4 md:justify-start md:space-x-10 animate-top-left px-5">
+      <div className="fixed top-0 left-0 right-0 bg-[#212121] w-full z-10">
+        <div className=" 2xl:max-w-[110rem] max-w-[85rem] mx-auto font-orbitron flex items-center justify-between  py-4 md:justify-start md:space-x-10 animate-top-left px-5">
           <img src="/assets/logo.svg" className="h-8 w-auto" alt="" />
           <div className=" flex items-center justify-center md:flex md:flex-1 space-x-4 lg:w-0">
             <Popover.Group as="nav" className="hidden space-x-10 md:flex mx-5">

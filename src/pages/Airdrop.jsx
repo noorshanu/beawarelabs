@@ -4,10 +4,12 @@ import Footer from '../components/Footer'
 import { BsTwitter } from 'react-icons/bs'
 import NFTCard from '../components/NFTCard'
 import {CgSandClock} from "react-icons/cg"
+import AirdropPageModal from '../components/AirdropPageModal'
 
 const Airdrop = () => {
   return (
     <div className="flex  w-full mt-[70px]   max-w-[87rem]   3xl:mr-[25vw] mx-auto sm:justify-center">
+      <AirdropPageModal/>
       <div className="justify-self-center">
         <div className="md:w-[80%] max-w-[100%] 3xl:w-full grid  md:grid-cols-11  mr-0 gap-x-4 px-5 py-5 bg-[#141624] rounded-lg">
           <div className="md:col-span-5">

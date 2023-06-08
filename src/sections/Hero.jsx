@@ -2,9 +2,9 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className=" relative hero-bg">
+    <div className=" relative hero-bg ">
       <img  src="/assets/header.svg" className="h-full w-auto absolute top-0 left-0 bottom-0 opacity-0 sm:opacity-50 md:opacity-70"/>
-    <div className="flex flex-col font-medium text-sm text-white justify-center items-center px-5 py-12 min-h-[90vh]">
+    <div className="flex flex-col font-medium text-sm text-white justify-center items-center px-5 py-12 min-h-[700px]">
       <h1 className="sm:text-6xl text-5xl md:text-8xl font-orbitron font-semibold text-center text-white">
         Empowering
       </h1>

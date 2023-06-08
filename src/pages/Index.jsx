@@ -10,7 +10,7 @@ import Footer from '../components/Footer'
 function Index() {
   return (
     <div>
-      <div className="max-w-[87rem] mx-auto mt-[68px]">
+      <div className="max-w-[85rem] mx-auto mt-[68px]">
         <Hero />
         <Stats />
       </div>

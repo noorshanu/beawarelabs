@@ -9,6 +9,7 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Index from './pages/Index'
 import Airdrop from './pages/Airdrop'
+import NotFound from './pages/NotFound'
 
 function App() {
   const router = createBrowserRouter(
@@ -16,15 +17,14 @@ function App() {
       <>
         <Route path="/" element={<Index />} />
         <Route path="/airdrop" element={<Airdrop />} />
+        <Route path="/*" element={<NotFound />} />
       </>,
     ),
   )
 
   return (
     <div className="bg-[#212121]">
-      <div className="max-w-[100rem] mx-auto">
         <Navbar />
-      </div>
 
       <RouterProvider router={router} />
 
