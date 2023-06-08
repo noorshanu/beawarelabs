@@ -44,8 +44,8 @@ export default function Navbar() {
             <Popover.Group as="nav" className="hidden space-x-10 md:flex mx-5">
               {navItems.map((nav, i) => {
                 return (
-                  <li key={i}>
             <NavLink
+              key={i}
               to={nav.route}
               activeClassName="text-[#fdd46e]"
               className={`text-medium font-normal p-0 m-0 h-fit w-fit hover:text-[#fdd46e] ${
@@ -56,7 +56,6 @@ export default function Navbar() {
                 <span>{nav.label}</span>
               </div>
             </NavLink>
-          </li>
                 )
               })}
             </Popover.Group>
