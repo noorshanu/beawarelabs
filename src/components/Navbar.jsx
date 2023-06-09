@@ -73,7 +73,7 @@ export default function Navbar() {
           </div>
           <a
             href="/"
-            className="mr-8 whitespace-nowrap w-40 border bg-transparent  border-[#fdb913] text-[#fdb913] rounded-md py-2 font-bold justify-center items-center px-3 text-sm md:flex hidden"
+            className="mr-8 whitespace-nowrap w-40 border bg-transparent  border-[#fdb913] text-[#fdb913] rounded-full py-2 font-bold justify-center items-center px-3 text-sm md:flex hidden"
           >
             Contact
           </a>
@@ -134,7 +134,7 @@ export default function Navbar() {
             {/* code here */}
             <a
               href="/"
-              className="mr-8 whitespace-nowrap w-[90%] bottom-5 right-5 left-5 text-center absolute border bg-transparent  border-[#fdb913] text-[#fdb913] rounded-md py-2 font-bold justify-center items-center px-3 text-sm"
+              className="mr-8 whitespace-nowrap w-[90%] bottom-5 right-5 left-5 text-center absolute border bg-transparent  border-[#fdb913] text-[#fdb913] rounded-full py-2 font-bold justify-center items-center px-3 text-sm"
             >
               Contact
             </a>

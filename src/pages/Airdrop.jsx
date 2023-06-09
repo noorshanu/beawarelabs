@@ -13,7 +13,7 @@ const Airdrop = () => {
       <AirdropPageModal />
       <div className="justify-self-center">
         <div className="md:w-[80%] max-w-[100%] 3xl:w-full grid  md:grid-cols-11  mr-0 gap-4 px-5 py-5 bg-[#000] rounded-lg">
-          <div className="flex justify-center font-play text-white bg-[#0e1f2a] md:col-span-11 rounded-lg py-2 px-2 ">
+          <div className="flex justify-center font-play text-white bg-[#212121] md:col-span-11 rounded-lg py-2 px-2 ">
             ENTRY PILiHoo entered Sugar Rush with 0.0016 ETH
           </div>
           <div className="md:col-span-5">
@@ -48,32 +48,33 @@ const Airdrop = () => {
               <CgSandClock className="text-blue-500 mr-1" /> CLOSES: 1 JUL 2023
               01:00
             </p>
-            <div className="bg-[#00111de9] p-3 rounded-2xl mt-4">
+            <div className="bg-[#212121] p-3 rounded-2xl mt-4">
               <h1 className="text-center my-4 text-white text-2xl font-mono font-bold">
                 ENTER COMPETITION
               </h1>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                <div className="bg-[#0e1f2a]  rounded-md w-full h-full p-2 flex flex-col justify-center items-center space-y-3">
+                <div className="bg-[#313131]  rounded-md w-full h-full p-2 flex flex-col justify-center items-center space-y-3">
                   <h1 className=" text-3xl sm:text-6xl text-white">1</h1>
                   <h1 className="text-white tracking-wide font-bold">Entry</h1>
-                  <button className="rounded-full text-sm font-bold text-white bg-[#0087ff] w-full flex justify-center items-center py-3">
+                  <button className="rounded-full text-sm font-bold border-2 border-[#fdb913] text-[#fdb913] bg-[#0088ff00] w-full flex justify-center items-center py-3">
                     0.75 eth
                   </button>
                 </div>
                 {[2, 3, 4].map((e) => (
+                  <>
                   <div
                     className={`bg-[url("https://metawin.com/_nuxt/rainbow.348c933e.svg")] bg-cover cursor-pointer transition-all hover:p-[3px] ${
                       e == 2 ? 'p-[3px]' : 'p-0 '
                     } rounded-md`}
                   >
-                    <div className="bg-[#0e1f2a] rounded-md w-full h-full  p-2 pt-10 flex flex-col justify-center items-center space-y-3">
+                    <div className="bg-[#313131] rounded-md w-full h-full  p-2 pt-10 flex flex-col justify-center items-center space-y-3">
                       <h1 className=" text-3xl sm:text-6xl bg-gradient-to-b from-[#facc15] to-[#f97316] bg-clip-text text-transparent">
                         1750
                       </h1>
                       <h1 className="font-bold text-white font-sans">
                         ENTRIES
                       </h1>
-                      <button className="rounded-full text-sm font-bold text-white bg-[#0087ff] w-full flex justify-center items-center py-3">
+                      <button className="rounded-full text-sm font-bold border-2 border-[#fdb913] text-[#fdb913] bg-[#0088ff00] w-full flex justify-center items-center py-3">
                         0.75 eth
                       </button>
                       <p className="font-black text-sm bg-gradient-to-b from-[#facc15] to-[#f97316] bg-clip-text text-transparent">
@@ -84,13 +85,14 @@ const Airdrop = () => {
                       </p>
                     </div>
                   </div>
+                  </>
                 ))}
                 <div className="bg-[url('https://metawin.com/_nuxt/microchip.585024a7.png')] bg-cover col-span-1 sm:col-span-2 bg-gray-200 rounded-md w-full h-auto  p-2 pt-10 flex flex-col justify-center items-center space-y-3">
                   <h1 className=" text-3xl sm:text-6xl bg-gradient-to-b from-[#facc15] to-[#f97316] bg-clip-text text-transparent">
                     1750
                   </h1>
                   <h1 className="font-bold text-white font-sans">ENTRIES</h1>
-                  <button className="rounded-full text-sm font-bold text-white bg-[#0087ff] w-full flex justify-center items-center py-3">
+                  <button className="rounded-full text-sm font-bold border-2 border-[#fdb913] text-[#fdb913] bg-[#0088ff00] w-full flex justify-center items-center py-3">
                     0.75 eth
                   </button>
                   <p className="font-black text-sm bg-gradient-to-b from-[#facc15] to-[#f97316] bg-clip-text text-transparent">
@@ -112,20 +114,20 @@ const Airdrop = () => {
                 <span> Multi Buy Gas Amount = Single Entry Gas Amount</span>
               </h4>
             </div>
-            <div className="bg-[#00111de9] py-3 px-2 rounded-xl flex justify-center mt-1 font-medium text-white text-sm text-clip">
+            <div className="bg-[#313131] py-3 px-2 rounded-xl flex justify-center mt-1 font-medium text-white text-sm text-clip">
               <span className="text-blue-600 font-bold mr-1">Contract: </span>{' '}
               <span className="text-clip">
                 {' '}
                 0X05ACEEDA4CFD9D084A20CB9E3B510C051599EF53
               </span>
             </div>
-            <div className="bg-[#00111de9] py-5 px-2 rounded-xl flex justify-center items-center flex-col mt-1  text-white text-[.8rem] font-bold">
+            <div className="bg-[#313131] py-5 px-2 rounded-xl flex justify-center items-center flex-col mt-1  text-white text-[.8rem] font-bold">
               <p>SHARE THIS COMPETITION</p>
               <p className="flex items-center w-full justify-center mt-6">
                 <BsTwitter className="text-2xl mr-6 " /> MORE
               </p>
             </div>
-            <div className="bg-[#00111de9] py-5 px-5 rounded-xl  mt-1">
+            <div className="bg-[#313131] py-5 px-5 rounded-xl  mt-1">
               <h1 className="text-white font-bold">ENDING SOON</h1>
               <div className="w-full h-[0.6px] bg-gray-600 mt-3" />
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-2 mt-5">

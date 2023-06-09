@@ -46,7 +46,7 @@ export default function AirdropPageModal({ showContent, setShowContent }) {
             >
               <Dialog.Panel className="relative transform overflow-hidden rounded-lg bg-transparent text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-md">
                 <XMarkIcon className='absolute top-4 right-4 cursor-pointer h-5 w-5' onClick={()=> setOpen(false)} color='white'/>
-                <div className=" eco-box-modal bg-[#020119]  px-4 pb-4 pt-4 sm:pt-6 sm:px-3 sm:pb-4">
+                <div className=" eco-box-modal bg-[#212121]  px-4 pb-4 pt-4 sm:pt-6 sm:px-3 sm:pb-4">
                   <div className="">
                     <div className="mt-3 text-center sm:ml-4 sm:mt-0">
                       <Dialog.Title
@@ -75,7 +75,7 @@ export default function AirdropPageModal({ showContent, setShowContent }) {
                           Join <span className='text-white font-bold'> 117,621 connected participants </span> and experience the
                           future of winning. Experience MetaWin.
                         </p>
-                        <div className='bg-[#0e1f2a] border-2 text-white font-bold mt-5 cursor-pointer hover:border-white transition-all border-[#017794] py-3 w-full rounded-full '>
+                        <div className='bg-[#fdbb1300] border-2 text-white font-bold mt-5 cursor-pointer hover:border-white transition-all border-[#fdb913] py-3 w-full rounded-full '>
                             Connect Wallet
                         </div>
                         <div className='flex justify-center w-full mt-4 items-center text-blue-600'><input type='checkbox' className='h-4 w-4 mr-1'/> Remember me</div>
