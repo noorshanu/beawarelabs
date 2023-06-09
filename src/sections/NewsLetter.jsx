@@ -30,7 +30,7 @@ function NewsLetter() {
           </div>
           <button
             type="button"
-            className="text-white bg-[#212121] hover:bg-[#fdd46e] hover:text-black sm:w-[150px] w-[300px] h-12 flex justify-center items-center font-[600] text-[15px] rounded-md border-0  "
+            className="text-white bg-[#212121] hover:bg-[#fdd46e] hover:text-black sm:w-[150px] w-[300px] h-12 flex justify-center items-center font-[600] text-[15px] rounded-full border-0  "
           >
             Subscribe
           </button>
