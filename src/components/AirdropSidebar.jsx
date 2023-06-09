@@ -33,7 +33,7 @@ const AirdropSidebar = () => {
     <div className="w-[20vw]  fixed invisible md:visible top-[70px] right-0 bottom-0 left-[80vw] bg-black  h-full ">
       <div className="h-[calc(100vh-70px)] relative w-full pt-3 font-play">
         <div className={`absolute  inset-0 z-50 ${showchat? "hidden" : "flex"}  justify-center items-center backdrop:blur-lg bg-black bg-opacity-30`}>
-          <button onClick={()=>setShowChat(true)} className=" cursor-pointer hover:border-white transition-all   border-[#fdb913] text-[#fdb913] bg-[#0088ff00]  border-2 rounded-full py-2 px-3 font-bold text-lg mt-10 ">
+          <button onClick={()=>setShowChat(true)} className=" cursor-pointer hover:border-white transition-all   border-[#fdb913] text-[#fff] bg-[#0088ff00]  border-2 rounded-full py-2 px-3 font-bold text-lg mt-10 ">
             Connect Wallet
           </button>
         </div>
