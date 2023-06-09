@@ -12,10 +12,10 @@ let navItems = [
     label: 'About',
     route: 'Market',
   },
-  // {
-  //   label: 'INFRA Token',
-  //   route: 'Market',
-  // },
+  {
+    label: 'INFRA Token',
+    route: 'Market',
+  },
   {
     label: 'Airdrop',
     route: 'airdrop',
