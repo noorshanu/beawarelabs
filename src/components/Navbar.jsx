@@ -5,17 +5,17 @@ import { NavLink } from 'react-router-dom'
 
 let navItems = [
   {
-    label: 'Products',
+    label: 'Home',
     route: '/',
   },
   {
     label: 'About',
     route: 'Market',
   },
-  {
-    label: 'INFRA Token',
-    route: 'Market',
-  },
+  // {
+  //   label: 'INFRA Token',
+  //   route: 'Market',
+  // },
   {
     label: 'Airdrop',
     route: 'airdrop',
