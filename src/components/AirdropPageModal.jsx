@@ -2,7 +2,7 @@ import { Fragment, useRef, useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import { ExclamationTriangleIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import { Router, useNavigate } from 'react-router-dom'
-
+import ConnectWalletBtn from './ConnectWalletBtn'
 // MetaWin logo
 // Win huge crypto prizes, digital collectibles and play our instant win games with just one click.
 
@@ -75,8 +75,8 @@ export default function AirdropPageModal({ showContent, setShowContent }) {
                           Join <span className='text-white font-bold'> 117,621 connected participants </span> and experience the
                           future of winning. Experience MetaWin.
                         </p>
-                        <div className='bg-[#fdbb1300] border-2 text-white font-bold mt-5 cursor-pointer hover:border-white transition-all border-[#fdb913] py-3 w-full rounded-full '>
-                            Connect Wallet
+                        <div className='flex justify-center mx-auto mt-7 '>
+                        <ConnectWalletBtn/>
                         </div>
                         <div className='flex justify-center w-full mt-4 items-center text-blue-600'><input type='checkbox' className='h-4 w-4 mr-1'/> Remember me</div>
                       </div>

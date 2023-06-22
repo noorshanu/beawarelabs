@@ -2,6 +2,7 @@ import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { NavLink } from 'react-router-dom'
+import ConnectWalletBtn from './ConnectWalletBtn'
 
 let navItems = [
   {
@@ -71,12 +72,8 @@ export default function Navbar() {
               </Popover.Button>
             </div>
           </div>
-          <a
-            href="/"
-            className="mr-8 whitespace-nowrap w-40 border bg-transparent  border-[#fdb913] text-[#fdb913] rounded-full py-2 font-bold justify-center items-center px-3 text-sm md:flex hidden"
-          >
-            Contact
-          </a>
+       
+          <ConnectWalletBtn/>
         </div>
       </div>
 
